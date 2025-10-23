@@ -31,7 +31,7 @@ Follow 테이블 :
 - from_user_id
 - to_user_id
 
-![alt text](image.png)
+![Follow 테이블 다이어그램](/assets/img/image.png)
 
 - 사실상 follow 테이블이 중간 테이블이다.
   - user -> table -> user
