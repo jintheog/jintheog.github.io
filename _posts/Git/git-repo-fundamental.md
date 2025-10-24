@@ -12,4 +12,4 @@ tags: [erd, database]
 
 # Repository
 
-- 프로젝트 별로 개별 관리
+- 프로젝트별로 개별 관리
