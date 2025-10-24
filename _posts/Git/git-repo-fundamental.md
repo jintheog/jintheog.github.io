@@ -1,6 +1,6 @@
 ---
 title: "Git Repo Fundamentals: README"
-date: 2025-10-24 12:00:00 +0900
+date: 2025-10-24 10:00:00 +0900
 categories: [Git]
 tags: [git]
 ---
