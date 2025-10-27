@@ -61,3 +61,21 @@ FROM
 ) AS customer_rental
 WHERE c_count >= 30;
 ```
+
+```sql
+-- 대여 기록이 있는 고객만 조회하세요.
+-- - 고객 이름 (first_name, last_name), 이메일
+select
+first_name,
+last_name,
+email
+from customer
+where customer_id IN (select customer_id from rental);
+
+select
+first_name, last_name, email
+from customer
+where
+	exists (select * from rental where customer.customer_id)
+;
+```
