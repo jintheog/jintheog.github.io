@@ -40,3 +40,24 @@ join category c on c.category_id = fc.category_id
 where fc.category_id = (select category_id from category where name = 'Action');
 
 ```
+
+# 예제
+
+```sql
+
+-- 고객별 대여 횟수를 구한 뒤, 대여 횟수가 30회 이상인 고객만 조회하세요.
+-- - 고객 이름, 대여 횟수, 대여 횟수 내림차순
+SELECT
+	c_name, c_id, c_count
+FROM
+(
+	SELECT
+		c.last_name AS c_name,
+		c.customer_id AS c_id,
+		COUNT(*) AS c_count
+	FROM customer c INNER JOIN rental r
+	ON c.customer_id = r.customer_id
+	GROUP BY c.customer_id
+) AS customer_rental
+WHERE c_count >= 30;
+```
