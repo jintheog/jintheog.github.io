@@ -1,6 +1,6 @@
 ---
 title: "SubQuery"
-date: 2025-10-27 12:00:00 +0900
+date: 2025-10-27 02:00:00 +0900
 categories: [Database, SQL]
 tags: [sql, database]
 ---
