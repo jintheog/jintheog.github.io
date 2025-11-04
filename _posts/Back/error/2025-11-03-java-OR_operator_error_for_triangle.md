@@ -1,7 +1,7 @@
 ---
 title: "삼각형 변의 조건식에 &&을 써야 하는 이유"
 date: 2025-11-03 00:00:00 +0900
-categories: [Back, Java, error]
+categories: [Back, error]
 tags: [OOP, Java, error]
 ---
 

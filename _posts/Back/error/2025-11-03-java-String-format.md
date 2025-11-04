@@ -1,7 +1,7 @@
 ---
 title: "향상된 switch문 안에서 쓰는 String.format 함수"
 date: 2025-11-03 00:00:00 +0900
-categories: [Back, Java, error]
+categories: [Back, error]
 tags: [OOP, Java, error]
 ---
 
