@@ -1,7 +1,7 @@
 ---
 title: "Subquery IN vs = ; error code 1242"
 date: 2025-10-27 12:00:00 +0900
-categories: [Database, error]
+categories: [Database, db-error]
 tags: [sql, error, database]
 ---
 
