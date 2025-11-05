@@ -5,6 +5,8 @@ categories: [Java]
 tags: [OOP, Java]
 ---
 
+{% raw %}
+
 ```Java
 import java.util.Arrays;
 public class ArraysUtility {
@@ -82,3 +84,5 @@ public class ArrayCopy {
 }
 
 ```
+
+{% endraw %}
