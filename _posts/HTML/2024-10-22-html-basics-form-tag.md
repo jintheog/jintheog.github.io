@@ -1,7 +1,7 @@
 ---
 title: "FORM 태그"
 date: 2024-10-22 15:00:00 +0900
-categories: [Front, HTML]
+categories: [HTML]
 tags: [html, web, frontend]
 ---
 

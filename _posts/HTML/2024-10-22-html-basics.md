@@ -1,7 +1,7 @@
 ---
 title: "HTML 기초"
 date: 2024-10-22 12:00:00 +0900
-categories: [Front, HTML]
+categories: [HTML]
 tags: [html, web, frontend]
 ---
 

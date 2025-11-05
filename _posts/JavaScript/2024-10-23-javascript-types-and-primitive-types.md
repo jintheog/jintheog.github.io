@@ -1,7 +1,7 @@
 ---
 title: "JavaScript 자료형 & 원시 자료형"
 date: 2024-10-23 14:00:00 +0900
-categories: [Front, JavaScript]
+categories: [JavaScript]
 tags: [javascript, web, programming]
 ---
 

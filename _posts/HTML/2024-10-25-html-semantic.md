@@ -1,13 +1,13 @@
 ---
 title: "HTML 시맨틱 태그"
 date: 2024-10-25 12:00:00 +0900
-categories: [Front, HTML]
+categories: [HTML]
 tags: [html, semantic, accessibility]
 ---
 
 ## 시맨틱 HTML이란?
 
-의미를 가진 HTML 태그를 사용하는 것입니다.
+의미를 가진 HTML 태그를 사용하는 것.
 
 ```html
 <header>헤더 영역</header>

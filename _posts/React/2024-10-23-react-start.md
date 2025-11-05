@@ -1,7 +1,7 @@
 ---
 title: "React & JSX"
 date: 2024-10-23 15:00:00 +0900
-categories: [Front, React]
+categories: [React]
 tags: [react, JSX]
 ---
 

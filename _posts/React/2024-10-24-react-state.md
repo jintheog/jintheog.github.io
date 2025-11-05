@@ -1,7 +1,7 @@
 ---
 title: "React State"
 date: 2024-10-24 15:00:00 +0900
-categories: [Front, React]
+categories: [React]
 tags: [react, state]
 ---
 

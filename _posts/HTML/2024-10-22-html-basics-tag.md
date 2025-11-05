@@ -1,7 +1,7 @@
 ---
 title: "HTML 기초 태그 분류"
 date: 2024-10-22 14:00:00 +0900
-categories: [Front, HTML]
+categories: [HTML]
 tags: [html, web, frontend]
 ---
 
