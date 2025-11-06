@@ -5,8 +5,6 @@ categories: [Java]
 tags: [OOP, Java]
 ---
 
-{% raw %}
-
 ```Java
 import java.util.Arrays;
 public class ArraysUtility {
@@ -44,12 +42,18 @@ public class ArraysUtility {
         System.out.println("배열 같음: " + Arrays.equals(arr1, arr2));
 
         // 8. deepToString() - 다차원 배열 출력
-        int[][] matrix = {{1, 2}, {3, 4}};
+        int[][] matrix = {
+          {1, 2}, {3, 4}
+        };
         System.out.println("2차원 배열: " + Arrays.deepToString(matrix));
 
         // 9. deepEquals() - 다차원 배열 비교
-        int[][] m1 = {{1, 2}, {3, 4}};
-        int[][] m2 = {{1, 2}, {3, 4}};
+        int[][] m1 = {
+          {1, 2}, {3, 4}
+        };
+        int[][] m2 = {
+          {1, 2}, {3, 4}
+        };
         System.out.println("2차원 배열 같음: " + Arrays.deepEquals(m1, m2));
     }
 }
@@ -84,5 +88,3 @@ public class ArrayCopy {
 }
 
 ```
-
-{% endraw %}
