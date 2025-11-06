@@ -1,6 +1,6 @@
 ---
 title: "Reference Type의 특징"
-date: 2025-11-03 00:00:00 +0900
+date: 2025-11-04 00:00:00 +0900
 categories: [Java]
 tags: [OOP, Java]
 ---
