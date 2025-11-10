@@ -76,4 +76,4 @@ temp[tempCount] = products[i];
 
 ```
 
-로 바꿔야 함
+로 바꿔야 함. 이렇게 하면 데이터가 존재하는 것들만 temp 배열안에 쌓임.
