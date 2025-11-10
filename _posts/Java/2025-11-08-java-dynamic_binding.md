@@ -278,6 +278,20 @@ for (Animal animal : animals) {
 | 결정 | 참조 타입 기준    | 실제 객체 타입 기준 |
 | 성능 | 빠름              | 상대적으로 느림     |
 
+# 🔍 “바인딩(binding)”이란?
+
+- “바인딩”은 **‘어떤 메서드를 실행할지 결정하는 시점’**을 뜻함
+- 자바가 `animal.makeSound();` 같은 코드를 실행할 때, 이게 **어떤 클래스의 makeSound()를 호출해야 하는지** 결정하는 순간이 바인딩이다.
+
+# 정적 바인딩(Static Binding) vs 동적 바인딩(Dynamic Binding)
+
+| 구분                              | 시점                    | 설명                                                        | 예시                                |
+| --------------------------------- | ----------------------- | ----------------------------------------------------------- | ----------------------------------- |
+| **정적 바인딩 (Static Binding)**  | **컴파일 시점**         | 어떤 메서드/변수를 쓸지 **컴파일러가 미리 결정**            | `private`, `static`, `final` 메서드 |
+| **동적 바인딩 (Dynamic Binding)** | **실행 시점 (Runtime)** | 실제 객체의 타입을 기준으로 **어떤 메서드를 실행할지** 결정 | 오버라이딩된 인스턴스 메서드        |
+
+# 예시
+
 ```java
 public class DynamicBinding {
     public static void main(String[] args) {
@@ -301,3 +315,84 @@ public class DynamicBinding {
 야옹!
 멍멍!
 ```
+
+# 예시 2
+
+```java
+class Animal {
+    public void makeSound() {
+        System.out.println("Animal sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("멍멍!");
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Animal a = new Dog();  // 업캐스팅
+        a.makeSound();         // 어떤 makeSound()가 호출될까?
+    }
+}
+
+```
+
+```bash
+멍멍!
+```
+
+# 왜 Animal 타입인데 Dog의 메서드가 실행될까?
+
+이게 바로 동적 바인딩:
+
+1. 컴파일 시점
+
+- 컴파일러는 변수 타입(Animal)만 보고 “makeSound()라는 메서드가 존재하는지”만 확인.
+
+- "Animal에 makeSound()가 있네? OK, 컴파일 통과."
+
+2. 실행 시점
+
+- JVM이 실제로 객체(new Dog())를 보고 “아, 이건 Dog 객체구나!”
+
+- 그래서 Dog 클래스의 오버라이딩된 makeSound() 를 실행한다.
+
+즉,
+
+> 컴파일러는 “형식(Animal)” 기준으로 검사하고,
+> 실행기는 “실체(Dog)” 기준으로 실행한다.
+
+```scss
+Animal a ───▶ (Dog 객체)
+               ↑
+               └─ makeSound() → "멍멍!"
+```
+
+- 변수 a는 Animal 타입이지만,
+
+- 가리키는 실제 객체는 Dog
+
+- 호출 시 JVM은 “Dog에 오버라이딩된 makeSound()”를 찾아 실행
+
+| 구분      | 정적 바인딩                   | 동적 바인딩                       |
+| --------- | ----------------------------- | --------------------------------- |
+| 결정 시점 | 컴파일 타임                   | 런타임                            |
+| 기준      | 변수의 타입                   | 실제 객체의 타입                  |
+| 적용 대상 | static, final, private 메서드 | 오버라이딩된 인스턴스 메서드      |
+| 대표 예시 | `Math.max(a, b)`              | `animal.makeSound()` (오버라이딩) |
+
+> 동적 바인딩(Dynamic Binding) 이란, 부모 타입의 참조 변수가 오버라이딩된 메서드를 호출할 때, 실행 시점에 실제 객체의 타입을 기준으로 메서드를 결정하는 것.
+
+```java
+for (Animal animal : animals) {
+    animal.makeSound();
+}
+```
+
+- 이 부분이 바로 **동적 바인딩의 대표적인 예시**.
+- 컴파일러는 “Animal에 makeSound()가 있나?”만 확인하지만,
+- 실행할 땐 각각 `Lion`, `Elephant`, `Monkey`의 메서드가 실제로 호출되는 것.
