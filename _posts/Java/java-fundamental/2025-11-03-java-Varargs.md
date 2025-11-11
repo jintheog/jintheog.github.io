@@ -1,5 +1,5 @@
 ---
-title: "Variable"
+title: "Varargs 가변인자"
 date: 2025-11-03 00:00:00 +0900
 categories: [Java, java-fundamental]
 tags: [OOP, Java]

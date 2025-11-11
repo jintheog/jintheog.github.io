@@ -1,5 +1,5 @@
 ---
-title: "Variable"
+title: "Array"
 date: 2025-11-04 00:00:00 +0900
 categories: [Java, java-fundamental]
 tags: [OOP, Java]
