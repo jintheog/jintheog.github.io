@@ -1,5 +1,5 @@
 ---
-title: "Prime Number"
+title: "Prime Number 소수 최적화"
 date: 2025-11-03 00:00:00 +0900
 categories: [Java, java-fundamental]
 tags: [OOP, Java]
