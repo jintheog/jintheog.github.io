@@ -1,7 +1,7 @@
 ---
 title: "Dynamic binding, runtime polymorphism"
 date: 2025-11-08 00:00:00 +0900
-categories: [Java]
+categories: [Java, java-oop]
 tags: [OOP, Java]
 ---
 

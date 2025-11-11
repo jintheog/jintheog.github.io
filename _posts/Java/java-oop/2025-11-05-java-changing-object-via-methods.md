@@ -1,7 +1,7 @@
 ---
 title: "How Object changes via other methods in other classes"
 date: 2025-11-05 00:00:00 +0900
-categories: [Java]
+categories: [Java, java-oop]
 tags: [OOP, Java]
 ---
 
