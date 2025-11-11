@@ -5,7 +5,8 @@ categories: [Java, java-fundamental]
 tags: [OOP, Java]
 ---
 
-소수: **1과 자기 자신 외에는 약수가 없는 수 **
+- 소수: **1과 자기 자신 외에는 약수가 없는 수**
+- 약수: 어떤 수를 나누어 떨어지게 하는(나머지가 0이 되게 하는) 수
 
 ```java
     public static void main(String[] args) {
