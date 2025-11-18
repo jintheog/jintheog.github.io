@@ -1,5 +1,5 @@
 ---
-title: "Get method and refresh button"
+title: "Get method and refresh button Get 메소드 요청과 새로고침"
 date: 2025-11-18 00:00:00 +0900
 categories: [Spring, MVC]
 tags: [Spring, MVC]
