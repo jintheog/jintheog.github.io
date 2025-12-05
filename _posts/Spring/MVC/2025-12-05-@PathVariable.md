@@ -1,6 +1,6 @@
 ---
 title: "@PathVariable"
-date: 2025-11-18 00:00:00 +0900
+date: 2025-12-05 00:00:00 +0900
 categories: [Spring, MVC]
 tags: [Spring, MVC, annotation]
 ---
